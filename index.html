@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- register service worker -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then(function () {
+              console.log("Service Worker Registered");
+            });
+        });
+      }
+    </script>
+    <!-- end of service worker -->
+    <title>Tran Thanh Phong</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="icons/logo.png" />
+    <!-- start of web manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <!-- end of web manifest -->
+    <!-- theme-color -->
+    <meta name="theme-color" content="#fff" />
+    <!-- end-theme-color -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <script src="assets/js/responsive.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body class="">
+    <div id="wrapper">
+      <article id="home" class="panel special" style="display: flex">
+        <div
+          class="image"
+          style="
+            background-image: url('images/image-face.jpg');
+            background-position: center center;
+          "
+        >
+          <img
+            src="images/image-face.jpg"
+            alt=""
+            data-position="center center"
+            style="display: none"
+          />
+        </div>
+
+        <div class="content">
+          <div class="inner">
+            <header>
+              <h1>Trần Thanh Phong</h1>
+
+              <p>
+                Lập trình viên
+                <!-- <br />
+                Creator of Project <br /><a href="#">DragonSP</a> -->
+              </p>
+            </header>
+
+            <nav id="nav">
+              <ul class="actions vertical special spinY">
+                <li>
+                  <a href="#work" class="button">Công việc</a>
+                </li>
+
+                <li><a href="#about" class="button">Giới thiệu</a></li>
+
+                <li><a href="#contact" class="button">Liên hệ</a></li>
+
+                <!-- <li><a href="#work" class="button share">Share now</a></li> -->
+              </ul>
+            </nav>
+
+            <ul class="icons">
+              <!-- <li>
+                <a href="#" class="icon fa-twitter">
+                  <span class="label">Twitter</span></a
+                >
+              </li> -->
+              <li>
+                <a
+                  href="https://www.facebook.com/thanhphong.tran.505"
+                  class="icon fa-facebook"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://github.com/TranThanhPhong120298"
+                  class="icon fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="mailto:thanhphong.tran@vitopmedia.co"
+                  class="icon fa-envelope"
+                  ><span class="label">Email</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article id="work" class="panel secondary inactive" style="display: none">
+        <div
+          class="image"
+          style="
+            background-image: url('images/image-work.jpg');
+            background-position: center center;
+          "
+        >
+          <img
+            src="images/image-work.jpg"
+            alt=""
+            data-position="center center"
+            style="display: none"
+          />
+        </div>
+        <div class="content">
+          <ul class="actions spinX">
+            <li>
+              <a href="#home" class="button small back">Trở lại</a>
+            </li>
+          </ul>
+
+          <div class="inner">
+            <header>
+              <h2>Công việc</h2>
+            </header>
+            <header>
+              <p>Hiện tại</p>
+            </header>
+            <p>Hiện tại đang làm việc tại công ty Vitop Media</p>
+
+            <header>
+              <p>Trước đây</p>
+            </header>
+
+            <p>
+              Từ 7/2017 đến 2/2018 <br />
+              FC GOOD COFFEE AND TEA - Quản lý <br />
+              - <u>Trách nhiệm chính:</u> Bán hàng cho người nước ngoài và người
+              Việt Nam tại Shop Quảng cáo sản phẩm trên các ấn phẩm truyền thông
+              như: banner, poster,…. Thực hiện báo cáo doanh số bán hàng mỗi
+              ngày.
+              <br />
+              - <u>Thành tích và kỹ năng đạt được:</u> Quan sát, tìm hiểu và nắm
+              bắt tốt khẩu vị của khách hàng. Nâng cao kỹ năng quản lý nguồn
+              nhân lực.
+
+              <!-- <ul class="actions spinX">
+                            <li>
+                                <a href="https://www.linkedin.com/in/mayeedwin/" class="button small forward">Expand</a>
+                            </li>
+                        </ul> -->
+            </p>
+            <p>
+              Từ 3/2019 đến 5/2020 <br />
+              Diamond Star Company - Tư vấn khách hàng. <br />
+              - <u>Trách nhiệm chính:</u> Kết nối cơ sở dữ liệu khách hàng với
+              người mua phù hợp. Giới thiệu, tư vấn sản phẩm và giải đáp các
+              thắc mắc của khách hàng qua điện thoại. Tham dự Khóa học Kỹ năng
+              Bán hàng tại Công ty.
+              <br />
+              - <u>Thành tích và kỹ năng đạt được:</u> Quảng cáo sản phẩm của
+              Công ty đến khách hàng hiệu quả: góp phần tăng 10% lượng khách
+              hàng trong vòng một tháng làm việc.
+
+              <!-- <ul class="actions spinX">
+                            <li>
+                                <a href="https://www.linkedin.com/in/mayeedwin/" class="button small forward">Expand</a>
+                            </li>
+                        </ul> -->
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article
+        id="about"
+        class="panel secondary inactive"
+        style="display: none"
+      >
+        <div
+          class="image"
+          style="
+            background-image: url('images/image-profile.jpg');
+            background-position: center bottom;
+          "
+        >
+          <img
+            src="images/image-profile.jpg"
+            alt=""
+            data-position="bottom center"
+            style="display: none"
+          />
+        </div>
+        <div class="content">
+          <ul class="actions spinX">
+            <li>
+              <a href="#home" class="button small back">Trở lại</a>
+            </li>
+          </ul>
+
+          <div class="inner">
+            <header>
+              <h2>Giới thiệu</h2>
+            </header>
+            <p>Đang được cập nhật!!!!</p>
+          </div>
+        </div>
+      </article>
+
+      <article
+        id="contact"
+        class="panel secondary inactive"
+        style="display: none"
+      >
+        <div
+          class="image"
+          style="
+            background-image: url('images/image-contact.jpg');
+            background-position: center bottom;
+          "
+        >
+          <img
+            src="images/image-contact.jpg"
+            alt=""
+            data-position="bottom center"
+            style="display: none"
+          />
+        </div>
+        <div class="content">
+          <ul class="actions spinX">
+            <li><a href="#home" class="button small back">Trở lại</a></li>
+          </ul>
+
+          <div class="inner">
+            <header>
+              <h2>Liên hệ</h2>
+            </header>
+
+            <p>
+              Email:
+              <a href="mailto:thanhphong.tran@vitopmedia.co" class=""
+                >thanhphong.tran@vitopmedia.co</a
+              >
+            </p>
+            <p>
+              Điện thoại:
+              <a href="tel:+84392769597" class="">039 2769 597</a>
+            </p>
+            <p>Địa chỉ:</p>
+            <div class="">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9760856342973!2d106.71061841528413!3d10.813141861470559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529794b6b833b%3A0x8a1d8f3549240190!2zMTE0IFFMMTMsIFBoxrDhu51uZyAyNiwgQsOsbmggVGjhuqFuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1615349338489!5m2!1svi!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <!-- 
+                    <form name="contactform" method="post" action="">
+
+                        <div class="field half first">
+
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Message</label>
+
+                            <textarea name="message" id="message" rows="5"></textarea>
+
+                        </div>
+
+                        <ul class="actions">
+
+                            <li>
+
+                                <a href="#" class="button submit">Send Message</a>
+
+                            </li>
+                        </ul>
+
+                    </form> -->
+          </div>
+        </div>
+      </article>
+
+      <footer id="footer" class="">
+        <p class="copyright">©TranThanhPhong. All rights reserved.</p>
+        <ul class="icons">
+          <!-- <li>
+              <a href="#" class="icon fa-twitter">
+                <span class="label">Twitter</span></a
+              >
+            </li> -->
+          <li>
+            <a
+              href="https://www.facebook.com/thanhphong.tran.505"
+              class="icon fa-facebook"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/TranThanhPhong120298"
+              class="icon fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+
+          <li>
+            <a
+              href="mailto:thanhphong.tran@vitopmedia.co"
+              class="icon fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="assets/js/buttons-navigate.js"></script>
+    <script src="assets/js/web-share.js"></script>
+  </body>
+</html>
